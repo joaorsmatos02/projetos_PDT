@@ -1,0 +1,94 @@
+\documentclass[11pt, xcolor=table]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{color}
+\usepackage{ulem}
+\usetheme{AnnArbor}
+\usecolortheme{dolphin}
+\definecolor{Color}{RGB}{204,204,255}
+\setbeamercolor{background canvas}{bg=Color}
+\author{João Ricardo Silva Matos}
+\title{Seguros de Saúde\\ Produç\~ao de Documentos Técnicos}
+\usepackage[labelsep=period]{caption}
+\captionsetup[table]{name=Tabela}
+\renewcommand{\thetable}{\Roman{table}}
+\captionsetup[figure]{name=Figura}
+\renewcommand{\thefigure}{\Roman{figure}}
+\usepackage{tabu}
+\usepackage[table]{xcolor}
+\setbeamertemplate{caption}[numbered]
+\newcommand\MC[1]{\begin{tabular}{@{} >{\color[HTML]{00CD5C}}c @{} } #1 \end{tabular}}
+
+\begin{document}
+
+\maketitle
+
+\clearpage
+
+\begin{frame}
+\frametitle{Preço por quantidade de atos médicos}
+    \begin{table}
+    \small
+    \arrayrulecolor[HTML]{00CD5C}
+\begin{tabular}{|*{4}{>{\color[HTML]{006CAD}}c|} }
+    \hline
+\MC{Nº Atos \\ Médicos \\ Anuais}
+    &   \MC{Seguro \\ A}
+        &   \MC{Seguro \\ B}
+            &   \MC{Seguro \\ C}    \\
+    \hline
+10  & 29  & 92  & 56  \\ \hline
+20  & 29  & 124 & 98 \\ \hline
+30  & 56 & 188 & 140 \\ \hline
+40  & 110 & 252 & 182 \\ \hline
+50  & 164 & 316 & 224 \\ \hline
+60  & 218 & 380 & 266 \\ \hline
+70  & 272 & 444 & 308 \\ \hline
+80  & 326 & 508 & 350 \\ \hline
+90  & 380 & 572 & 392 \\ \hline
+100 & 434 & 636 & 434 \\ \hline
+110 & 488 & 700 & 476 \\ \hline
+120 & 542 & 764 & 518 \\ \hline
+\end{tabular}
+\caption{Preço de atos médicos}
+\label{Tab:1}
+    \end{table}
+\end{frame}
+
+
+\clearpage
+
+\begin{frame}
+\frametitle{Preço por quantidade de atos médicos}
+\begin{figure}
+\includegraphics[scale=0.5]{Sem Título.png}
+\caption{Comparação do preço de atos médicos por seguro}
+\label{Fig:1}
+\end{figure}
+\end{frame}
+
+\clearpage
+
+\begin{frame}
+\frametitle{Conclusão}
+Com  base nos dados acima referidos podemos concluir que o seguro mais vantajoso será:
+\vspace{1cm}
+\begin{enumerate}
+\item O seguro C, caso preveja a realização de mais de 100 atos médicos por ano.
+\item O seguro A, caso seja previsível a realização de 100 ou menos atos médicos por ano.
+\end{enumerate}
+\end{frame}
+
+\clearpage
+
+\begin{frame}
+\frametitle{Obrigado pela sua atenção}
+\begin{figure}
+\includegraphics[scale=0.35]{seguro-saude (1).jpg}
+\caption{Seguros de saúde}
+\label{Fig:2}
+\end{figure}
+Fonte:https://www.acarteira.pt/artigos-seguros/seguro-de-saude-ou-plano-de-saude-como-escolher/
+\end{frame}
+
+\end{document}
